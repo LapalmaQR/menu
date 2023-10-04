@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Framework/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <title>La Palma</title>
+  </head>
+  <body>
+    <div class="all-menu">
+      <div class="center-menu container">
+        <div class="header">
+          <div class="logo">
+            <!-- <img src="./img/image.png" alt="" /> -->
+            <img src="./img/yenilogo-transparent.png" alt="" />
+            
+          </div>
+          <h1 class="py-5">MENU</h1>
+        </div>
+
+        <div class="food-parts">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="row g-3 g-sm-5">
+
+              <!-- ANA YEMEKLER START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      <span>ANA YEMƏKLƏR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="ana-yemekler"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ANA YEMEKLER END -->
+
+
+              <!-- SACLAR START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      <span>SACLAR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="saclar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SACLAR END -->
+
+              <!-- QARNIRLER START -->
+
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseEightteen"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseEightteen"
+                    >
+                      <span>QARNİRLƏR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseEightteen"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="qarnirler"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- QARNIRLER END -->
+
+
+              <!-- FAST FOOD START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
+                      <span>FAST FOOD</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="kabablar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FAST FOOD END -->
+
+              <!-- PİZZALAR START -->
+
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseNineteen"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseNineteen"
+                    >
+                      <span>PİZZALAR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseNineteen"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="pizzalar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- PİZZALAR END -->
+
+              <!-- SORBALAR START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <span>ŞORBALAR</span>
+                    </button>
+                  </h2>
+
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="sorbalar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SORBALAR END -->
+
+              <!-- SALATLAR START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      <span>SALATLAR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="soyuq-qelyanalti"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SOYUQ Qelyanalti END -->
+
+
+              
+
+              
+
+
+              
+
+              
+
+              
+
+              
+
+
+              
+              
+
+              <!-- SOYUQ ICKILER START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseEight"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseEight"
+                    >
+                      <span>SOYUQ İÇKİLƏR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseEight"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="soyuq-ickiler"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SOYUQ ICKILER END -->
+
+              <!-- SPİRTLİ İCKİLER START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTen"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTen"
+                    >
+                      <span>SPİRTLİ İÇKİLƏR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTen"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <h5 class="text-white py-2">Pivələr</h5>
+                      <div class="list" id="pive-cellek"></div>
+
+                      <!-- <h5 class="text-white mt-3 py-2">Şüşə Pivələr</h5>
+                      <div class="list" id="pive-suse"></div> -->
+
+                      <h5 class="text-white mt-3 py-2">
+                        İçkilər <span>( 0.5l / 0.7l / 1l)</span>
+                      </h5>
+                      <div class="list" id="araqlar"></div>
+
+                      <!-- <h5 class="text-white mt-3 py-2">
+                        Viskilər <span>(50ml / 1l)</span>
+                      </h5> -->
+                      <!-- <div class="list" id="viskiler"></div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SPİRTLİ İCKİLER START -->
+
+<!-- PIVE SETLERI START -->
+
+<div class="col-12 col-sm-12 col-md-6">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapsePiveseti"
+        aria-expanded="false"
+        aria-controls="flush-collapsePiveseti"
+      >
+        <span>PİVƏ SETLƏRİ</span>
+      </button>
+    </h2>
+    <div
+      id="flush-collapsePiveseti"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body">
+        <div class="list" id="pivesetleri"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PIVE SETLERI END -->
+
+              <!-- PIVE_MEZELERI START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseEleven"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseEleven"
+                    >
+                      <span>PİVƏ MƏZƏLƏRİ</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseEleven"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="pive-mezeleri"></div>
+
+                      <!-- <h3 class="text-white mt-3 py-2">İsti Qəlyanaltılar</h3>
+                      <div class="list" id="qelyanalti"></div> -->
+
+                      <!-- <h3 class="text-white mt-3 py-2">Sosiskalar</h3>
+                      <div class="list" id="sosiskalar"></div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- PIVE_MEZELERI END -->
+              
+              <!-- SOSISLER START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwentieth"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwentieth"
+                    >
+                      <span>SOSİSLƏR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwentieth"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="sosiskalar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- SOSISLER END -->
+
+              <!-- CAY DEZGAHLARİ START -->
+
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFifteen"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFifteen"
+                    >
+                      <span>ÇAY DƏZGAHLARI</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFifteen"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="caydezgahlari"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- CAY DEZGAHLARİ END -->
+
+              <!-- ISTI ICKILER START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseNine"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseNine"
+                    >
+                      <span>İSTİ İÇKİLƏR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseNine"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="isti-ickiler"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ISTI ICKILER END -->
+
+              <!-- DESERTLER START -->
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwelve"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwelve"
+                    >
+                      <span>DESERTLƏR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwelve"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="desertler"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- DESERTLER END -->
+
+              
+
+
+             
+
+              <!-- QELYANLAR START -->
+
+              <div class="col-12 col-sm-12 col-md-6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSeventeen"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSeventeen"
+                    >
+                      <span>QƏLYANLAR</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseSeventeen"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="list" id="qelyanlar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- QELYANLAR END -->
+
+              
+
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="#">BM-Web</a>
+    </div>
+
+    <script src="Framework/js/bootstrap.bundle.js"></script>
+
+    <script src="data/Isti_Qelyanalti.js"></script>
+    <script src="data/Ana_Yemekler.js"></script>
+    <script src="data/Soyuq_qelyanaltilar.js"></script>
+    <script src="data/Isti_ickiler.js"></script>
+    <script src="data/Desertler.js"></script>
+    <script src="data/Kabablar.js"></script>
+    <script src="data/Pive_mezeleri.js"></script>
+    <script src="data/Piveler.js"></script>
+    <script src="./data/Pizzalar.js"></script>
+    <script src="data/Qelyanlar.js"></script>
+    <script src="data/Saclar.js"></script>
+    <script src="data/Sezon_baliqlar.js"></script>
+    <script src="data/Sosiskalar.js"></script>
+    <script src="data/Viskiler.js"></script>
+    <script src="data/Soyuq_ickiler.js"></script>
+    <script src="data/Pive_Cellek.js"></script>
+    <script src="data/Pive_Suse.js"></script>
+    <script src="data/Araqlar.js"></script>
+    <script src="data/Viskiler.js"></script>
+    <script src="data/Sorbalar.js"></script>
+    <script src="data/Qarnirler.js"></script>
+    <script src="data/Cay_Dezgahlari.js" ></script>
+    <script src="data/Pive_Setleri.js"></script>
+  </body>
+</html>
